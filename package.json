@@ -1,0 +1,21 @@
+{
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "description": "A webpack template for use with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesjohnson280/webpack-react.git"
+  },
+  "keywords": [],
+  "author": "James Johnson <james.johnson280@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesjohnson280/webpack-react/issues"
+  },
+  "homepage": "https://github.com/jamesjohnson280/webpack-react#readme"
+}
