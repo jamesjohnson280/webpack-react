@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
-  return <h1>Hello React!</h1>
+const App = ({ title }) => {
+  return <h1>{ title }</h1>
 };
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(<App title="Hello React!"/>, document.getElementById('app'))
 module.hot.accept();
