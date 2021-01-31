@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.jsx'),
+  entry: path.resolve(__dirname, '../src/index.jsx'),
   module: {
     rules: [
       {
@@ -18,7 +18,7 @@ module.exports = {
     extensions: ['*', '.js', 'jsx']
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name]-[fullhash].bundle.js'
   },
   optimization: {
@@ -36,13 +36,12 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Hello React!',
-      template: path.resolve(__dirname, './static/index.html'),
+      template: path.resolve(__dirname, '../static/index.html'),
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, './dist'),
+    contentBase: path.resolve(__dirname, '../dist'),
     hot: true,
   },
-  devtool: 'source-map',
 };
