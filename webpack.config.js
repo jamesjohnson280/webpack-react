@@ -19,7 +19,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name]-[fullhash]-bundle.js'
+    filename: '[name]-[fullhash].bundle.js'
   },
   optimization: {
     splitChunks: {
