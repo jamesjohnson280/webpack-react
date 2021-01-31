@@ -6,3 +6,4 @@ const App = () => {
 };
 
 ReactDOM.render(<App />, document.getElementById('app'))
+module.hot.accept();
